@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+.hello {
+   margin: 0;
+   padding: 0
+}
+
+@media (max-width: 414px) {
+
+.homePage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #622FB5 0%, #1B0F36 100%);
+  border-radius: 10px;
+}
+
+.homePage > .weather-first {
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: 62px;
+  top: 60px;
+}
+
+.weather-second {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 62px;
+  top: 240px;
+  filter: drop-shadow(23.1667px 23.1667px 23.1667px rgba(0, 0, 0, 0.25));
+}
+
+.weather-third {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 253px;
+  top: 150px;
+  filter: drop-shadow(21.6667px 21.6667px 21.6667px rgba(0, 0, 0, 0.25));
+}
+
+.weather-fourth {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 233px;
+  top: 385px;
+  filter: drop-shadow(22px 22px 22px rgba(0, 0, 0, 0.25));
+}
+
+.app-caption {
+  position: absolute;
+  width: 70%;
+  height: 48px;
+  left: 40px;
+  top: 582px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.weather-caption {
+  position: absolute;
+  width: 75%;
+  height: 48px;
+  left: 40px;
+  top: 639px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.get-started{
+  position: absolute;
+  width: 364px;
+  height: 98px;
+  left: 25px;
+  top: 757px;
+  background: #a888db;
+  border-radius: 25px;
+  color: white;
+  font-size: 30px;
+  font-family: poppins;
+  
+}
+
+}
+
