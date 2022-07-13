@@ -1,95 +1,694 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 .hello {
-   margin: 0;
-   padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 414px) {
+  .homePage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #622fb5 0%, #1b0f36 100%);
+  }
 
-.homePage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #622FB5 0%, #1B0F36 100%);
-  border-radius: 10px;
-}
+  .homePage > .weather-first {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    left: 62px;
+    top: 35px;
+  }
 
-.homePage > .weather-first {
-  position: absolute;
-  width: 90px;
-  height: 80px;
-  left: 62px;
-  top: 60px;
-}
+  .weather-second {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 62px;
+    top: 200px;
+    filter: drop-shadow(23.1667px 23.1667px 23.1667px rgba(0, 0, 0, 0.25));
+  }
 
-.weather-second {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  left: 62px;
-  top: 240px;
-  filter: drop-shadow(23.1667px 23.1667px 23.1667px rgba(0, 0, 0, 0.25));
-}
+  .weather-third {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 253px;
+    top: 100px;
+    filter: drop-shadow(21.6667px 21.6667px 21.6667px rgba(0, 0, 0, 0.25));
+  }
 
-.weather-third {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  left: 253px;
-  top: 150px;
-  filter: drop-shadow(21.6667px 21.6667px 21.6667px rgba(0, 0, 0, 0.25));
-}
+  .weather-fourth {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 253px;
+    top: 305px;
+    filter: drop-shadow(22px 22px 22px rgba(0, 0, 0, 0.25));
+  }
 
-.weather-fourth {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  left: 233px;
-  top: 385px;
-  filter: drop-shadow(22px 22px 22px rgba(0, 0, 0, 0.25));
-}
+  .app-caption {
+    position: absolute;
+    width: 70%;
+    height: 48px;
+    left: 40px;
+    top: 425px;
+    font-family: sans;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 40px;
+    color: #ffffff;
+  }
 
-.app-caption {
-  position: absolute;
-  width: 70%;
-  height: 48px;
-  left: 40px;
-  top: 582px;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 33px;
-  line-height: 48px;
-  color: #FFFFFF;
-}
+  .weather-caption {
+    position: absolute;
+    width: 75%;
+    height: 48px;
+    left: 40px;
+    top: 490px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
 
-.weather-caption {
-  position: absolute;
-  width: 75%;
-  height: 48px;
-  left: 40px;
-  top: 639px;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
+  .get-started {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    top: 620px;
+    margin: auto;
+    background: #a888db;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: sans;
+  }
 
-.get-started{
-  position: absolute;
-  width: 364px;
-  height: 98px;
-  left: 25px;
-  top: 757px;
-  background: #a888db;
-  border-radius: 25px;
-  color: white;
-  font-size: 30px;
-  font-family: poppins;
+  /* login page styling follows */
+
+  .loginPage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #7f4cd2 0%, #291865 100%);
+  }
+
+  .loginPage > h1 {
+    position: absolute;
+    left: 30px;
+    top: -5px;
+    font-family: sans;
+    font-weight: 800;
+    font-size: 38px;
+    color: #ffffff;
+  }
+
+  .loginPage > p {
+    position: absolute;
+    font-size: 18px;
+    left: 30px;
+    top: 65px;
+    font-family: sans;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+
+  .formDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .value {
+    position: absolute;
+    padding: 10px;
+    width: 330px;
+    height: 40px;
+    top: 140px;
+    color: white;
+    background: #2b1a6c;
+    border-radius: 18px;
+    font-family: "Poppins";
+    font-size: 16px;
+    border: none;
+  }
+
+  .value1 {
+    position: absolute;
+    padding: 10px;
+    width: 330px;
+    height: 40px;
+    top: 220px;
+    background: #2b1a6c;
+    color: white;
+    border-radius: 18px;
+    font-family: "Poppins";
+    font-size: 16px;
+    border: none;
+  }
+
+  .visibility {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 235px;
+    left: 332px;
+    filter: grayscale(100%);
+  }
+
+  .visibility1 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 235px;
+    left: 332px;
+    filter: grayscale(100%);
+  }
+
+  .formDetails > .reset {
+    position: absolute;
+    left: 215px;
+    top: 290px;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+
+  .mainDiv {
+    position: absolute;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div1 {
+    width: 150px;
+    height: 0px;
+    border: 1px solid #ffffff;
+  }
+
+  .div2 {
+    width: 150px;
+    height: 0px;
+    border: 1px solid #ffffff;
+  }
+
+  .mainDiv > p {
+    margin: 0px 8px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .sign-in-with {
+    position: absolute;
+    top: 380px;
+    font-family: "Rubik";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 0.186px;
+    color: #ffffff;
+  }
+
+  .google-apple-logo {
+    display: flex;
+    position: absolute;
+    top: 430px;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .google-container,
+  .apple-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .google,
+  .apple {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .google-name,
+  .apple-name {
+    color: white;
+    text-align: center;
+    margin-top: -15px;
+    font-family: p;
+    letter-spacing: 1.5px;
+  }
+
+  .login {
+    position: relative;
+    top: 590px;
+    width: 350px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-family: sans;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.3s all linear;
+    margin: auto;
+    background: #a888db;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+  }
+
+  .login:hover {
+    background: #6f3fbb;
+  }
+
+  .create-account {
+    position: absolute;
+    top: 675px;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.186px;
+    text-decoration-line: underline;
+    color: #ffffff;
+  }
+
+  /*Home page style follows */
+
+  .preview-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .icon-cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-top: -310px;
+  }
+
+  .profile-cover {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+  .menu {
+    background-color: rgb(223, 209, 209);
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 25px;
+    opacity: 0.8;
+  }
+
+  .location-update {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-top: -15px;
+  }
+
+  .current-location-update > h1 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .current-location-update > p {
+    font-family: "Poppins";
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-top: -10px;
+  }
+
+  .current-location-temp > h1 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 32px;
+    line-height: 42px;
+    text-align: right;
+  }
+
+  .current-location-temp > h3 {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    position: relative;
+    top: -28px;
+  }
+
+  .swipe-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+    
+  }
+
+  .swipe-for-details {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    
+  }
+
+  .arrow-down {
+    margin: auto;
+  }
+
+  .weather-images {
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px
+  }
+
+  .weather-images > div > img {
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+  }
+
+  .weather-images > div > h4 {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    font-family: "Poppins";
+    letter-spacing: 1.5px;
+  }
+
+  .current-day {
+    color: white;
+    margin-top: -95px;
+    padding: 0px 20px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .different-times-temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: -15px;
+  }
+
+  .temp-cover {
+    width: 80px;
+    height: 80px;
+    background: #622fb5;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .temp-cover > img {
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .temp-cover > h3 {
+    color: white;
+    margin-top: -5px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .icons {
+    width: 100%;
+    height: 60px;
+    background: #7f4cd2;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .icons > img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+  }
+
+  /*landing page styling */
+  .previewImageA {
+    width: 100%;
+    height: 250px;
+  }
+  .previewImage {
+    height: 100%;
+    width: 100%;
+  }
+
+  .right-arrow {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .right-arrow:hover {
+    border: 2.5px solid #ffffff;
+  }
+
+  section {
+    width: 100%;
+    height: 511px;
+    background: #431098;
+    border-radius: 30px 30px 0px 0px;
+    position: absolute;
+    top: 32%;
+    bottom: 0%;
+  }
+
+  .weather--forecast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+  .second-forecast > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -31px;
+    margin-top: 15px;
+  }
+
+  .second-forecast > h2 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .weather--forecast2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    margin-bottom: -25px;
+  }
+
+  .weather--forecast2 > div > h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .weather--forecast2 > div > h5 {
+    color: gray;
+    margin-bottom: -10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .weather--forecast3 {
+    width: 350px;
+    height: 120px;
+    margin: 25px auto;
+    background: #622fb5;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+  }
+
+  .outlier {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+    line-height: 17px;
+    color: white;
+    letter-spacing: 1.5px;
+    border: 2px solid #431098;
+    border-radius: 20px;
+    width: 300px;
+    height: 17px;
+    cursor: pointer;
+  }
+
+  .outlier > p {
+    margin-top: -1px;
+  }
+
   
-}
 
-}
+  .outlier1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -35px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    color: white;
+    letter-spacing: 1.5px;
+  }
 
+  .small--moon {
+    width: 27px;
+    height: 27px;
+  }
+
+  /*Sign Up page styling */
+  .signUp-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #622fb5 0%, #1b0f36 100%);
+    
+  }
+
+  .signUp-page > h1 {
+    color: white;
+    font-family: sans;
+    text-align: center;
+
+  }
+
+  legend {
+    color: white;
+    font-family: sans;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .sign-up-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+  }
+
+  .sign-up-form > input {
+    padding: 12px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #d9d7e0;
+  }
+
+  .sign-up-form  > .sign-up {
+    padding: 12px;
+    width: 86%;
+    font-size: 20px;
+    background-color: #1b0f36;
+    color: white;
+    box-shadow: 2px 2px 1px #b2a0cf;
+    border-radius: 3px;
+  }
+
+  .sign-up-option {
+    text-align: center;
+    color: white;
+    font-family: sans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin: 40px;
+  }
+
+  .google-apple-logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .google-container2, .apple-container2 {
+    background-color: rgb(236, 228, 228);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 5px #9e76df;
+  }
+
+  .google2, .apple2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .old-user-login {
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+
+  .old-user-login-link {
+    background-color: white;
+    padding: 2px;
+  }
+}
