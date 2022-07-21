@@ -6,7 +6,8 @@ import Login from "./pages/login";
 import Home from "./pages/home";
 import LandingPage from "./pages/landingPage";
 import ErrorPage from "./pages/errorPage";
-import "moment-timezone";
+
+import moment from "moment-timezone";
 import SignUp from "./pages/signUp";
 import React from "react";
 import { useEffect, useState } from "react";
