@@ -15,7 +15,7 @@ import React from "react";
 export default function App() {
   const getTimelineURL = "https://api.tomorrow.io/v4/timelines";
   const apikey = "zMoLGLWZ8qa2RCpIpd0gJEMfhqrBQJsa";
-  let location = [9.0765, 7.3986];
+  const location = [9.0765, 7.3986];
   const fields = [
     "precipitationIntensity",
     "precipitationType",
@@ -59,7 +59,7 @@ export default function App() {
       .then((result) => result.json())
       .then((realData) => setWeatherData(realData))
       .catch((error) => console.log(error, "Error from network request"));
-  }, []);
+  }, [location]);
   console.log(weatherData?.data);
   const fahrenheit =
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.temperature;
