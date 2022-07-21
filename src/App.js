@@ -59,7 +59,7 @@ export default function App() {
       .then((result) => result.json())
       .then((realData) => setWeatherData(realData))
       .catch((error) => console.log(error, "Error from network request"));
-  }, []);
+  }, [1]);
   console.log(weatherData?.data);
   const fahrenheit =
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.temperature;
@@ -93,8 +93,6 @@ export default function App() {
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.windDirection;
   const cloudBase =
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.cloudBase;
-  const temperature =
-    weatherData?.data?.timelines[2]?.intervals[0]?.values?.temperature;
 
   // Hourly details
   const cloudCoverHourly =
@@ -110,8 +108,6 @@ export default function App() {
     weatherData?.data?.timelines[1]?.intervals[0]?.values?.windDirection;
   const cloudBaseHourly =
     weatherData?.data?.timelines[1]?.intervals[0]?.values?.cloudBase;
-  const temperatureHourly =
-    weatherData?.data?.timelines[1]?.intervals[0]?.values?.temperature;
 
   // Daily details
   const cloudCoverDaily =
@@ -127,8 +123,6 @@ export default function App() {
     weatherData?.data?.timelines[0]?.intervals[0]?.values?.windDirection;
   const cloudBaseDaily =
     weatherData?.data?.timelines[0]?.intervals[0]?.values?.cloudBase;
-  const temperatureDaily =
-    weatherData?.data?.timelines[0]?.intervals[0]?.values?.temperature;
 
   return (
     <Routes>

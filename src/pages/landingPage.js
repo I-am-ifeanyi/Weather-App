@@ -49,12 +49,6 @@ export default function LandingPage({
     suffix = "th";
   }
 
-  let skyStatus;
-  if (temperature > 23) {
-    skyStatus = "Clear Sky";
-  } else {
-    skyStatus = "Cloudy";
-  }
   const bg = {
     width: "100px",
     textAlign: "center",

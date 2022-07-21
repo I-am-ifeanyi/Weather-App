@@ -10,7 +10,6 @@ import { useRef } from "react";
  
 export default function Login() {
   
-const user = {email: "theonyekagroup@gmail.com", password: "Supremo"}
 const navigate = useNavigate()
 const inputRef = useRef(null)
 function dataSubmit(event) {
