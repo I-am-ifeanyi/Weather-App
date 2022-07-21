@@ -59,7 +59,7 @@ export default function App() {
       .then((result) => result.json())
       .then((realData) => setWeatherData(realData))
       .catch((error) => console.log(error, "Error from network request"));
-  });
+  }, []);
   console.log(weatherData?.data);
   const fahrenheit =
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.temperature;
