@@ -5,7 +5,6 @@ import google from "../images/google_logo.png"
 import apple from "../images/apple_logo.jpg"
 import arrow from "../images/arrow-right.png";
 import {Link, useNavigate} from "react-router-dom"
-import Home from "./home";
 import { useRef } from "react";
 
  
@@ -46,8 +45,8 @@ function dataSubmit(event) {
           name="password"
           required
         />
-        <img src={showPassword} className="visibility" />
-        <img src={notShow} className="visibility1" />
+        <img src={showPassword} className="visibility" alt="" />
+        <img src={notShow} className="visibility1" alt="" />
         <p className="reset">Forgot password?</p>
         <div className="mainDiv">
           <div className="div1"></div>
@@ -71,11 +70,10 @@ function dataSubmit(event) {
         </div>
 
         <button className="login">Login</button>
-      
-          <Link to="/signUp" className="create-account">
-            I'm new here <img src={arrow} alt="" />
-          </Link>
-      
+
+        <Link to="/signUp" className="create-account">
+          I'm new here <img src={arrow} alt="" />
+        </Link>
       </form>
     </main>
   );

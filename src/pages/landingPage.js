@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import preview2 from "../images/preview_2.png";
 import rightArrow from "../images/arrow_right.png";
 import moonshot from "../images/weather-third.png";

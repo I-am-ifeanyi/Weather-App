@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Intro from "./pages/intro";
@@ -6,11 +6,9 @@ import Login from "./pages/login";
 import Home from "./pages/home";
 import LandingPage from "./pages/landingPage";
 import ErrorPage from "./pages/errorPage";
-
 import moment from "moment-timezone";
 import SignUp from "./pages/signUp";
 import React from "react";
-import { useEffect, useState } from "react";
 
 
 
@@ -54,12 +52,14 @@ export default function App() {
 
   const [weatherData, setWeatherData] = React.useState({});
   React.useEffect(() => {
-  fetch(getTimelineURL + "?" + getTimelineParameters, {method: "GET", compress: true})
-  .then((result) => result.json())
-  .then((realData) => setWeatherData(realData))
-  .catch(error => console.log(error, "Error from network request"))
-
-  }, [])
+    fetch(getTimelineURL + "?" + getTimelineParameters, {
+      method: "GET",
+      compress: true,
+    })
+      .then((result) => result.json())
+      .then((realData) => setWeatherData(realData))
+      .catch((error) => console.log(error, "Error from network request"));
+  }, []);
   console.log(weatherData?.data);
   const fahrenheit =
     weatherData?.data?.timelines[2]?.intervals[0]?.values?.temperature;

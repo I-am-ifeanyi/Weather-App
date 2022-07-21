@@ -1,20 +1,16 @@
 import React from "react";
-import preview from "../images/preview.png"
 import Vector from "../images/Vector.png"
 import arrow from "../images/arrow_down.png"
 import chennai from "../images/chennai.png"
 import jaipur from "../images/jaipur.png"
 import List from "../images/List.png"
 import cloud from "../images/cloud_1.svg"
-import cloud1 from "../images/cloud-2.svg";
 import cloud2 from "../images/cloud-3.svg";
-import cloud3 from "../images/cloud-4.svg";
 import houseLine from "../images/HouseLine.svg";
 import search from "../images/MagnifyingGlass.png";
 import compass from "../images/Compass.png";
 import Nut from "../images/Nut.png";
-import { Navigate, useNavigate } from "react-router-dom";
-import LandingPage from "./landingPage";
+import {  useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 
